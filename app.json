@@ -1,24 +1,23 @@
 {
-  "pages":[
+  "pages": [
     "pages/home/home",
     "pages/ladder/ladder",
     "pages/query/query",
     "pages/sponsor/sponsor"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "撸韩服",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
-  "tabBar":{
+  "tabBar": {
     "selectedColor": "#1296db",
-    "list":[
+    "list": [
       {
-        "pagePath":"pages/home/home",
-        "text":"首页",
-        "iconPath":"images/icons/home.png",
-        "selectedIconPath":"images/icons/homeHL.png"
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/icons/home.png",
+        "selectedIconPath": "images/icons/homeHL.png"
       },
       {
         "pagePath": "pages/ladder/ladder",
@@ -28,7 +27,7 @@
       },
       {
         "pagePath": "pages/query/query",
-        "text": "查询",
+        "text": "检索",
         "iconPath": "images/icons/query.png",
         "selectedIconPath": "images/icons/queryHL.png"
       },

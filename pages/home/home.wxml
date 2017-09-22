@@ -1,2 +1,31 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="top-swiper">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="list-header">TOP10</view>
+  <view class="list-group">
+      <view class="list-item" wx:for="{{top10Items}}" wx:for-item="item">
+        <image class="list-item-image" src="{{item.icon}}" mode="aspectFit" ></image>
+        <view class="list-item-text">{{item.text}}</view>
+      </view>
+  </view>
+  <view class="list-header">战队</view>
+  <view class="list-group">
+      <view class="list-item" wx:for="{{teamItems}}" wx:for-item="item">
+        <image class="list-item-image" src="{{item.icon}}" mode="aspectFit"/>
+        <view class="list-item-text">{{item.text}}</view>
+      </view>
+  </view>
+  <view class="list-header">位置</view>
+  <view class="list-group">
+      <view class="list-item" wx:for="{{placeItems}}" wx:for-item="item">
+        <image class="list-item-image" src="{{item.icon}}" mode="aspectFit"/>
+        <view class="list-item-text">{{item.text}}</view>
+      </view>
+  </view>
+</view>
